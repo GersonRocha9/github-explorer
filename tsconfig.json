@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext" ],
+
+    // allowJs permite usar JS e TS no mesmo projeto
+    "allowJs": true,
+
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+
+    // resolveJsonModule permite importar arquivos .json
+    "resolveJsonModule": true,
+    
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,    
+    "noEmit": true,
+    "isolatedModules": true,       
+    "skipLibCheck": true 
+  },
+  "include": ["src"]
+}

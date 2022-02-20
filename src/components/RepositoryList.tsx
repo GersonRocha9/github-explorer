@@ -21,10 +21,8 @@ export function RepositoryList() {
       <h1>My GitHub Repo List</h1>
 
       <ul>
-        {/* map percorre cada repositório e pega as infos q precisa no RepositoryItem */}
         {repositories.map((repository) => (
-          <RepositoryItem key={repository.id} repository={repository} />
-          // key = identificador unico para cada elemento
+          <RepositoryItem repository={repository} />
         ))}
       </ul>
     </section>
