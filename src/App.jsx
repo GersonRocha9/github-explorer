@@ -1,11 +1,17 @@
 import React from "react";
 
-import Header from "./components/Header/index.jsx";
+// imutabilidade = não altera o estado do componente
+
+import { RepositoryList } from "./components/RepositoryList";
 
 import "./styles/global.scss";
 
-function App() {
-  return <Header />;
-}
+const App = () => {
+  return (
+    <>
+      <RepositoryList />
+    </>
+  );
+};
 
 export default App;
