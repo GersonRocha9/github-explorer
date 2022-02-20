@@ -4,8 +4,14 @@ import React, { useState, useEffect } from "react";
 
 import "../styles/repositories.scss";
 
+interface Repository {
+  name: string;
+  description: string;
+  html_url: string;
+}
+
 export function RepositoryList() {
-  const [repositories, setRepositories] = useState([]);
+  const [repositories, setRepositories] = useState<Repository[]>([]);
 
   // Chamando a API do GitHub
   useEffect(() => {
@@ -21,8 +27,8 @@ export function RepositoryList() {
       <h1>My GitHub Repo List</h1>
 
       <ul>
-        {repositories.map((repository) => (
-          <RepositoryItem repository={repository} />
+        {repositories.map((repository: Repository) => (
+          <RepositoryItem key={repository.name} repository={repository} />
         ))}
       </ul>
     </section>
