@@ -13,8 +13,3 @@ yarn start
 #or
 npm run start
 ```
-
-## Credits
-
-@RocketSeat
-@diego3g
