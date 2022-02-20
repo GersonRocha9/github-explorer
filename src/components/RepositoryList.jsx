@@ -16,13 +16,12 @@ export function RepositoryList() {
   }, []);
   // Array vazio no final para que a função seja executada apenas uma vez
 
-  console.log(repositories);
-
   return (
     <section className="repository-list">
-      <h1>Lista de Repositórios</h1>
+      <h1>My GitHub Repo List</h1>
 
       <ul>
+        {/* map percorre cada repositório e pega as infos q precisa no RepositoryItem */}
         {repositories.map((repository) => (
           <RepositoryItem key={repository.id} repository={repository} />
           // key = identificador unico para cada elemento
